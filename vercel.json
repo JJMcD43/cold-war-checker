@@ -1,9 +1,12 @@
 {
     "version": 2,
     "builds": [
-        { "src": "api/*.py", "use": "@vercel/python" }
+        {
+            "src": "api/check_answer.py",
+            "use": "@vercel/python@3.9"
+        }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/api/check_answer.py" }
+        { "src": "/(.*)", "dest": "api/check_answer.py" }
     ]
 }
