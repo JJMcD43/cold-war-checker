@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "api/check_answer.py",
-            "use": "@vercel/python@3.9"
+            "use": "@vercel/python"
         }
     ],
     "routes": [
